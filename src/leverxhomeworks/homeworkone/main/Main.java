@@ -1,21 +1,24 @@
-package LeverXHomeworks.homeworkOne.mainClass;
+package leverxhomeworks.homeworkone.main;
 
-import LeverXHomeworks.homeworkOne.entityClasses.Commands;
-import LeverXHomeworks.homeworkOne.serviceClasses.CalculateService;
-import LeverXHomeworks.homeworkOne.utilClasses.IsDigit;
-import LeverXHomeworks.homeworkOne.utilClasses.Reader;
-import LeverXHomeworks.homeworkOne.utilClasses.Writer;
+import leverxhomeworks.homeworkone.entity.Commands;
+import leverxhomeworks.homeworkone.service.CalculatorService;
+import leverxhomeworks.homeworkone.utills.IsDigitValidator;
+import leverxhomeworks.homeworkone.utills.Reader;
+import leverxhomeworks.homeworkone.utills.Writer;
 
 import java.util.Objects;
 
-public class HomeworkClassOne {
+public class Main {
+
+    public Main() {
+    }
 
     public static void main(String[] args) {
 
-        Writer writer = new Writer();
-        Reader reader = new Reader();
-        IsDigit isDigit = new IsDigit();
-        CalculateService calculate =  new CalculateService();
+        final Writer writer = new Writer();
+        final Reader reader = new Reader();
+        final IsDigitValidator isDigit = new IsDigitValidator();
+        final CalculatorService calculate =  new CalculatorService();
         Commands type = Commands.CONTINUE;
         String operandA;
         String operandB;
@@ -24,10 +27,10 @@ public class HomeworkClassOne {
         while (true) {
             writer.writeString("Input first int digit");
             operandA = reader.readString();
-            if (isDigit.isDigit(operandA)) {
+            if (isDigit.CheckNumberIfItDigit(operandA)) {
                 writer.writeString("Input second digit");
                 operandB = reader.readString();
-                if (isDigit.isDigit(operandB)) {
+                if (isDigit.CheckNumberIfItDigit(operandB)) {
                     writer.writeString("Input command: PLUS, MINUS, MULTIPLY, DIV or type EXIT");
                     try {
                         type = Commands.valueOf(reader.readString());

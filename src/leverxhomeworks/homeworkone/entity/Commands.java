@@ -1,4 +1,4 @@
-package LeverXHomeworks.homeworkOne.entityClasses;
+package leverxhomeworks.homeworkone.entity;
 
 public enum Commands {
     CONTINUE,

@@ -1,7 +1,7 @@
-package LeverXHomeworks.homeworkOne.utilClasses;
+package leverxhomeworks.homeworkone.utills;
 
-public class IsDigit {
-    public boolean isDigit(String s) throws NumberFormatException {
+public class IsDigitValidator {
+    public boolean CheckNumberIfItDigit(String s) throws NumberFormatException {
         try {
             Integer.parseInt(s);
             return true;

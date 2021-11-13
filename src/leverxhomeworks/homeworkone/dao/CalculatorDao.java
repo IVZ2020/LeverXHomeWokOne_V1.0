@@ -1,20 +1,17 @@
-package LeverXHomeworks.homeworkOne.daoClasses;
+package leverxhomeworks.homeworkone.dao;
 
-import LeverXHomeworks.homeworkOne.entityClasses.Commands;
-import LeverXHomeworks.homeworkOne.utilClasses.Writer;
+import leverxhomeworks.homeworkone.entity.Commands;
+import leverxhomeworks.homeworkone.utills.Writer;
 
-public class CalculateDao {
+public class CalculatorDao {
 
-    Writer writer = new Writer();
-    int result;
-    String intResult = null;
-    String outputResult = null;
+    private final Writer writer = new Writer();
+    private int result;
+    private String outputResult = null;
 
-    public String calculate(String stringOperandA, String stringOperandB, Commands type) {
-        int intOperandA;
-        intOperandA = Integer.parseInt(stringOperandA);
-        int intOperandB;
-        intOperandB = Integer.parseInt(stringOperandB);
+    public String calculate (String stringOperandA, String stringOperandB, Commands type) {
+        int intOperandA = Integer.parseInt(stringOperandA);
+        int intOperandB = Integer.parseInt(stringOperandB);
 
         switch (type) {
             case DIV -> {
@@ -30,7 +27,7 @@ public class CalculateDao {
             case PLUS -> result = intOperandA + intOperandB;
             default -> outputResult = "Something wrong. Starting again";
         }
-        intResult = String.valueOf(result);
+        String intResult = String.valueOf(result);
         if (!intResult.equals(outputResult)) {
             outputResult = intResult;
         }
