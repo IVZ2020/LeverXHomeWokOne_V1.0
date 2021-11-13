@@ -9,7 +9,7 @@ The input method - from console.
 Version
 
 LeverX Homework One
-Version 1.0.1
+Version 1.0.2
 November 13
 
 
