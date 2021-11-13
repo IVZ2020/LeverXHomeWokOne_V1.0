@@ -36,6 +36,8 @@ In case you input EXIT instead of int number you will receive request to input i
 The application will loop until you will type EXIT on particular request.
 
 EXCEPTIONS
+
+
 The application will not show you any Exception messages just because all of them a hidden in the code.
 Every your mistake will handled in the code and the application will go to nessesary request and will display you such request in the console.
 
