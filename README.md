@@ -1,11 +1,35 @@
 # LeverXHomeWokOne_V1.0
 
+What is this? 
+
+The application created as a simple calculator that operates only int variable and values.
+The input method - from console.
+
+
+Version
+
 LeverX Homework One
 Version 1.0
 November 13
 
-The application created as a simple calculator that operates only int variable and values.
-The input method - from console.
+
+Lisenses
+
+All rights belong to LeverX Group.
+
+
+Contacts
+https://leverx.com
+Addresses:
+Minsk, 6, Oginskogo, 6
+Minsk, 7a Lopatina, 7а
+Minsk, 14, Kuprevicha
+
+Ph.: +375 17 252 22 00
+Email: careers@leverx.com
+
+
+How it works?
 
 The applications starst by pressing green arrow on the top of Idea.
 
@@ -35,8 +59,8 @@ In case you input EXIT instead of int number you will receive request to input i
 
 The application will loop until you will type EXIT on particular request.
 
-EXCEPTIONS
 
+Exceptions.
 
 The application will not show you any Exception messages just because all of them a hidden in the code.
 Every your mistake will handled in the code and the application will go to nessesary request and will display you such request in the console.
@@ -46,8 +70,3 @@ Every your mistake will handled in the code and the application will go to nesse
 ![image](https://user-images.githubusercontent.com/64846715/141647157-a95dd996-449a-49d0-8f65-53a196ed7613.png)
 
 ![image](https://user-images.githubusercontent.com/64846715/141647162-cdecf7be-fb5c-4198-a4ab-34e5256b2b0f.png)
-
-
-
-
-
