@@ -27,10 +27,10 @@ public class Main {
         while (true) {
             writer.writeString("Input first int digit");
             operandA = reader.readString();
-            if (isDigit.CheckNumberIfItDigit(operandA)) {
+            if (isDigit.сheckNumberIfItDigit(operandA)) {
                 writer.writeString("Input second digit");
                 operandB = reader.readString();
-                if (isDigit.CheckNumberIfItDigit(operandB)) {
+                if (isDigit.сheckNumberIfItDigit(operandB)) {
                     writer.writeString("Input command: PLUS, MINUS, MULTIPLY, DIV or type EXIT");
                     try {
                         type = Commands.valueOf(reader.readString());
